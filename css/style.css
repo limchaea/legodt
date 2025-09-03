@@ -15,12 +15,13 @@ body {
     font-family: "Outfit", "Suit", sans-serif;
     font-size: 1.6rem;
     color: var(--font_base_Color);
+    background: #f3f3f3;
 }
 
 .wide_inner {
     /* padding: 0 2.5%; padding, margin 둘 다 가능. */
     margin: 0 2.5%;
-    background-color: rgba(0, 100, 255, 0.3);
+    /* background-color: rgba(0, 100, 255, 0.3); */
     position: relative;
 }
 
@@ -38,7 +39,7 @@ header {
     height: 7rem;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .logo {
@@ -69,7 +70,7 @@ header {
     gap: 2.4rem;
 
     >li {
-        background-color: green;
+        /* background-color: green; */
         position: relative;
 
         >a {
@@ -117,9 +118,9 @@ header {
 /* 서브 메뉴의 배경이 100%인 경우 header fixed일 때 사용할 것. */
 .depth1 {
     /* display: none; */
-    background-color: skyblue;
+    /* background-color: skyblue; */
     position: absolute;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     left: 50%;
     transform: translateX(-50%);
     height: 0;
@@ -144,7 +145,7 @@ header {
 
 .header_right>ul>li {
     position: relative;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     line-height: 70px;
 }
 
@@ -158,7 +159,7 @@ header {
     display: none;
     height: auto;
     padding: 12px 30px 12px 12px;
-    border: 1px solid #d3d3d3;
+    /* border: 1px solid #d3d3d3; */
     border-radius: 10px;
     background: #fff;
     line-height: 2;
@@ -339,15 +340,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     text-align: center;
 }
 
 .make_your_wrap .make_your {
+    position: relative;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
     background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
 }
 
 .make_your_wrap .make_your .text_box {

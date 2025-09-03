@@ -9,10 +9,46 @@
 @media screen and (max-width:980px) {
 
     /* 1.제거하기 */
-    .main_menu,
+    /* .main_menu, */
     .header_right,
     address,
     .company_info {
+        display: none;
+    }
+
+    nav {
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: -110vw;
+        z-index: 10000;
+    }
+
+    .main_menu {
+        display: block;
+        width: 70%;
+        height: 100%;
+        max-width: 640px;
+        min-width: 320px;
+        text-indent: 20px;
+        background-color: pink;
+    }
+
+    .main_menu::before {
+        display: none;
+    }
+
+    .main_menu:hover .depth1 {
+        height: auto;
+    }
+
+    .depth1 {
+        position: static;
+        height: auto;
+        transform: translateX(0);
+        text-indent: 40px;
         display: none;
     }
 
@@ -20,13 +56,20 @@
         overflow: hidden;
     }
 
+    .main_menu>li:hover .depth1 {
+        display: block;
+    }
+
     /* 2. 보이기 */
+
 
     /* 3. 100% 만들기 */
     /* header */
     .header_left {
         top: 50%;
         transform: translateY(-50%);
+        line-height: 56px;
+        
     }
 
     /* main_slider */
@@ -193,6 +236,10 @@
         width: 100%;
     }
 
+    .make_your .text_box .slider_title {
+        font-size: 4rem;
+    }
+
     .make_your_wrap .text_box .lets_btn {
         padding: 1rem 3rem;
         font-size: 1.6rem;
@@ -220,15 +267,15 @@
         }
     }
 
-    .catalogue_list>div .thumb_img{
-        gap:0;
+    .catalogue_list>div .thumb_img {
+        gap: 0;
     }
 
-    .footer_bottom{
-        gap:0;
+    .footer_bottom {
+        gap: 0;
     }
 
-    .sns_list>li{
-        flex:1;
+    .sns_list>li {
+        flex: 1;
     }
 }
